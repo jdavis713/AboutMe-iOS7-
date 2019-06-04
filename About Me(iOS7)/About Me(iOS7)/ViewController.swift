@@ -12,9 +12,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("My name is Jordan Davis")
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
     }
 
+    //MARK: - Actions
+    
+    @IBAction func introduce(_ sender: Any) {
+        nameLabel.text = "Jordan Davis"
+        hobbiesLabel.text = "Running, sleeping, coding"
+    }
+    
 
+    //MARK: - Properties
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
+    
+    
 }
 
